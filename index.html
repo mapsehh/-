@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Экскурсии</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+          <li><img src="travel.png" onclick="button('main.html')" class="icon-travel" alt=""></li>
+          <li><a href="index.html">Экскурсии</a></li>
+          <li><a href="about.html">Об авторе</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <h3>Наш топ 3 самых популярных экскурсий:</h3>
+    <ol> 
+      <li>Прогулка по Токийскому нижнему городу</li>
+      <li>Влюбиться в Камакуру: по столице самураев с местным жителем</li>
+      <li>Очарование южного Токио</li>
+    </ol>
+    <h4>Записаться на экскурсию:</h4>
+    <form id="excursionForm">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Телефон:</label>
+      <input type="text" id="phone" name="phone" required>
+      <label for="excursion">Выберите экскурсию:</label>
+      <select id="excursion" name="excursion">
+        <option value="1">Прогулка по Токийскому нижнему городу</option>
+        <option value="2">Влюбиться в Камакуру: по столице самураев с местным жителем</option>
+        <option value="3">Очарование южного Токио</option>
+        <option value="4">Блеск и изнанка района Синдзюку</option>
+        <option value="5">Путешествие к подножию Фудзиямы</option>
+        <option value="6">Путешествие в национальный парк Фудзи-Хаконе-Идзу</option>
+      </select>
+      <button type="button" id="submitBtn">Отправить</button>
+    </form>
+    <div id="message"></div>
+    <table>
+      <tr>
+        <td><img src="PROGULKA.jpg" class="zxc" alt="">
+        </td>
+        <td><img src="KAMAKURA.jpg" class="zxc" alt=""></td>
+        <td><img src="tokyo.jpg" class="zxc" alt=""></td>
+      
+      </tr>
+      <tr>
+        <td class="text-content"><P><B>Прогулка по Токийскому нижнему городу</B></P>
+            <P><I>Синтоистские святилища, аутентичные ресторанчики и погружение в повседневную жизнь Токио</I></P>
+        </td>
+        <td class="text-content"><P><B>Влюбиться в Камакуру: по столице самураев с местным жителем</B></P>
+            <P><I>Перенестись в Японию 12 века, посетить старинные буддистские храмы и пройти по следам сёгунов</I></P></td>
+        <td class="text-content"><P><B>Очарование южного Токио</B></P>
+            <P><I>Старинные храмы, живописный японский сад, чайная церемония и модный район Сибуя за один день </I></td>
+      </tr>
+      <tr>
+        <td class="text-content">Длительность 3 часа</td>
+        <td class="text-content">Длительность 2,5 часа</td>
+        <td class="text-content">Длительность 3,5 часа</td>
+      </tr>
+      <tr>
+        <td class="text-content">Стоимость € 200</td>
+        <td class="text-content">Стоимость € 170</td>
+        <td class="text-content">Стоимость € 170</td>
+      </tr>
+      <tr>
+        <td><img src="rayon.jpg" alt="" class="zxc"></td>
+        <td><img src="fudziyama.jpeg" alt="" class="zxc"></td>
+        <td><img src="fudzi.jpg" alt="" class="zxc"></td>
+        <tr>
+          <td class="text-content"><P><B>Блеск и изнанка района Синдзюку</B></P>
+              <P><I>Передовой дизайн, архитектура и самый злачный квартал Токио — в одной экскурсии</I></P>
+          </td>
+          <td class="text-content"><P><B>Путешествие к подножию Фудзиямы</B></P>
+              <P><I>Погрузиться в культуру Японии и покориться ее красоте на экскурсии из Токио к озеру Кавагутико</I></P></td>
+          <td class="text-content"><P><B>Путешествие в национальный парк Фудзи-Хаконе-Идзу</B></P>
+              <P><I>На автомобиле, кораблике и канатной дороге по самым живописным местам региона</I></td>
+        </tr>
+        <tr>
+          <td class="text-content">Длительность 2,5 часа</td>
+          <td class="text-content">Длительность 4 часа</td>
+          <td class="text-content">Длительность 6 часов</td>
+        </tr>
+        <tr>
+          <td class="text-content">Стоимость € 290</td>
+          <td class="text-content">Стоимость € 365</td>
+          <td class="text-content">Стоимость € 270</td>
+        </tr>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
